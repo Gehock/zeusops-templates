@@ -18,6 +18,7 @@ fn_addAllActions = {
 	[_this, "MEDIC"]        call fn_addLoadoutAction;
 	[_this, "RIFLEMAN"]     call fn_addLoadoutAction;
 	[_this, "TEAMLEADER"]   call fn_addLoadoutAction;
+	[_this, "VEHICLE CREW"] call fn_addLoadoutAction;
 };
 
 fn_addLoadoutAction = {
