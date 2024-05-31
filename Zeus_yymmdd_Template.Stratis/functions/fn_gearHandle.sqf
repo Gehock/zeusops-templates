@@ -276,12 +276,12 @@ fn_gearLoadout = {
 			for "_i" from 1 to 3 do {player addItemToVest "UK3CB_BAF_SmokeShell";};
 			for "_i" from 1 to 16 do {player addItemToVest ((missionNameSpace getVariable "gearWeaponMain") select 1)};
 			player addBackpack (missionNameSpace getVariable "gearBackpack");
-			for "_i" from 1 to 15 do {
-				player addItemToBackpack "ACE_salineIV";
-				player addItemToBackpack "ACE_tourniquet";
+			for "_i" from 1 to 8 do {
+				for "_i" from 1 to 3 do {player addItemToBackpack "ACE_salineIV"};
+				for "_i" from 1 to 5 do {player addItemToBackpack "ACE_fieldDressing"};
+				for "_i" from 1 to 1 do {player addItemToBackpack "ACE_tourniquet"};
 				for "_i" from 1 to 2 do {player addItemToBackpack "ACE_epinephrine"};
 				for "_i" from 1 to 2 do {player addItemToBackpack "ACE_morphine"};
-				for "_i" from 1 to 3 do {player addItemToBackpack "ACE_fieldDressing"};
 				for "_i" from 1 to 2 do {player addItemToBackpack "ACE_splint"};
 			};
 
